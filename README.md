@@ -12,7 +12,9 @@ To run, follow these steps:
 3. Install dependencies: **`python install -r requirements.txt`** or **`make run-setup`** if Make is installed
 4. Start the project: **`python -m uvicorn main:app --reload`** or **`make run`** if Make is installed
 5. Head to [Swagger UI docs](http://127.0.0.1:8000/docs/), click on the default endpoint -> try it out -> upload the old and new PDF files
-6. download the generated PDF from the same panel under the response tab, or follow the error message and change the input files in case of errors. 
+6. download the generated PDF from the same panel under the response tab, or follow the error message and change the input files in case of errors.
+
+Two sample PDFs have been included in the /test directory, to run the tool for these PDFs, run  **`python test.py`** or **`make run-test`** if Make is installed
 
 ## **Assumptions and Limitations**
 1. This tool works only for text-related content. It does not detect changes in images and other content
